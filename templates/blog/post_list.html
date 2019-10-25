@@ -1,0 +1,60 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block content %}
+<!-- ##### Breadcrumb Area Start ##### -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcrumb Area End ##### -->
+
+<!-- ##### Blog Area Start ##### -->
+<div class="blog-area section-padding-100">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Blog Post Area -->
+            <div class="col-12 col-lg-8">
+                <h2>Все статьи</h2>
+                <div class="row">
+                    {% for post in post_list %}
+                        <!-- Single Blog Post Area -->
+                        <div class="col-12 col-md-6">
+                            <div class="single-blog-post mb-50">
+                                <div class="post-thumbnail">
+                                    <a href="{{ post.get_absolute_url }}"><img src="{{ post.img.url }}" alt=""></a>
+                                </div>
+                                <div class="post-content">
+                                    <a href="{{ post.get_absolute_url }}" class="post-title">
+                                        <h4>{{ post.title }}</h4>
+                                    </a>
+                                    <div class="post-meta d-flex">
+                                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> {{ post.author }}</a>
+                                        <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.publish }}</a>
+                                    </div>
+                                    <p class="post-excerpt">{{ post.body|truncatewords:15|linebreaks }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                {% include 'layout/pagination.html' %}
+
+            </div>
+
+            {% include 'blog/blog_sidebar.html' %}
+        </div>
+    </div>
+</div>
+<!-- ##### Blog Area End ##### -->
+{% endblock %}

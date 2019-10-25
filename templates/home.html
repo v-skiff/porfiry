@@ -1,0 +1,538 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ##### Hero Area Start ##### -->
+<section class="hero-area hero-post-slides owl-carousel">
+    <!-- Single Hero Slide -->
+    <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(static/img/bg-img/main_slider/candles1.jpg);">
+        <!-- Post Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">Храм сщмч. Порфирия Криворожского</h2>
+                        <p data-animation="fadeInUp" data-delay="300ms">Сайт общины храма</p>
+                        <a href="#" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">О нас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Hero Slide -->
+    <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(static/img/bg-img/main_slider/incense.jpg);">
+        <!-- Post Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">Храм сщмч. Порфирия Криворожского</h2>
+                        <p data-animation="fadeInUp" data-delay="300ms">Сайт общины храма</p>
+                        <a href="#" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">О нас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### About Area Start ##### -->
+<section class="about-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Добро пожаловать в нашу общину</h2>
+                    <p>Церковь - это не здание, это - люди. Добро пожаловать в нашу общину.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row about-content justify-content-center">
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/3.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Мероприятия</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/4.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Расписание богослужений</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/5.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Проповеди</h4>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### About Area End ##### -->
+
+<!-- ##### Call To Action Area Start ##### -->
+<section class="call-to-action-area section-padding-100 bg-img bg-overlay" style="background-image: url(static/img/bg-img/6.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="call-to-action-content text-center">
+                    <h6>Вопрос свяеннику</h6>
+                    <h2>Здесь Вы можете задать свой вопрос священнику в письменной форме.</h2>
+                    <a href="#" class="btn crose-btn btn-2">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Call To Action Area End ##### -->
+
+<!-- ##### Latest Sermons Area Start ##### -->
+<section class="latest-sermons-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Новые проповеди</h2>
+                    <p>Раздел, где отображаются самые свежие проповеди и беседы. Или любые другие полезные медиа-материалы.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Single Latest Sermons -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'img/bg-img/7.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>10</span>MAR</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <div class="sermons-cata">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                        </div>
+                        <h4>Что такое покаяние</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Проповедь от: <span>о. Андрей</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> Метки: <span>Покаяние, Молитва</span></p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 10 марта 2019 <span>9:00 am - 11:00 am</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Latest Sermons -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'img/bg-img/8.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>11</span>MAY</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <div class="sermons-cata">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                        </div>
+                        <h4>Что значит спасение?</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Проповедь от: <span>о. Андрей</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> Метки: <span>Спасение, Молитва</span></p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 11 марта 2019 <span>9:00 am - 11:00 am</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Latest Sermons -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'img/bg-img/9.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>15</span>MAY</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <div class="sermons-cata">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                        </div>
+                        <h4>Как относиться к смерти?</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Проповедь от: <span>о. Андрей</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> Метки: <span>Смерть, Молитва</span></p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 15 марта 2019 <span>9:00 am - 11:00 am</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Latest Sermons Area End ##### -->
+
+<!-- ##### Upcoming Events Area Start ##### -->
+<section class="upcoming-events-area section-padding-0-100">
+    <!-- Upcoming Events Heading Area -->
+    <div class="upcoming-events-heading bg-img bg-overlay bg-fixed" style="background-image: url(static/img/bg-img/1.jpg);">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-left white">
+                        <h2>Ближайшие события</h2>
+                        <p>В ближайшее время состоятся такие события:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Events Slide -->
+    <div class="upcoming-events-slides-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="upcoming-slides owl-carousel">
+
+                        <div class="single-slide">
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/23.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Пасхальное Богослужение</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/24.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Рождественское Богослужение</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 15, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 - 13:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 22 Maly St, Matatin, RYO</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/25.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Беседы с прихожанами</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 19, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 17:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 17 Buit St, Center Disce, LA</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="single-slide">
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/23.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Пасхальное Богослужение</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/24.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Рождественское Богослужение</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 15, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 - 13:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 22 Maly St, Matatin, RYO</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Upcoming Events Area -->
+                            <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                <!-- Thumbnail -->
+                                <div class="upcoming-events-thumbnail">
+                                    <img src="{% static 'img/bg-img/25.jpg' %}" alt="">
+                                </div>
+                                <!-- Content -->
+                                <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                    <div class="events-text">
+                                        <h4>Беседы с прихожанами</h4>
+                                        <div class="events-meta">
+                                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 19, 2018</a>
+                                            <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 17:00</a>
+                                            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 17 Buit St, Center Disce, LA</a>
+                                        </div>
+                                        <p>Описание предстоящего события, какая-то полезная информация для прихожан и гостей храма.</p>
+                                        <a href="#">Читать далее <i class="fa fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="find-out-more-btn">
+                                        <a href="#" class="btn crose-btn btn-2">Все события</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Upcoming Events Area End ##### -->
+
+<!-- ##### Gallery Area Start ##### -->
+<div class="gallery-area d-flex flex-wrap">
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/13.jpg" class="gallery-img" title="Gallery Image 1">
+            <img src="{% static 'img/bg-img/13.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/14.jpg" class="gallery-img" title="Gallery Image 2">
+            <img src="{% static 'img/bg-img/14.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/15.jpg" class="gallery-img" title="Gallery Image 3">
+            <img src="{% static 'img/bg-img/15.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/16.jpg" class="gallery-img" title="Gallery Image 4">
+            <img src="{% static 'img/bg-img/16.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/17.jpg" class="gallery-img" title="Gallery Image 5">
+            <img src="{% static 'img/bg-img/17.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/18.jpg" class="gallery-img" title="Gallery Image 6">
+            <img src="{% static 'img/bg-img/18.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/19.jpg" class="gallery-img" title="Gallery Image 7">
+            <img src="{% static 'img/bg-img/19.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/20.jpg" class="gallery-img" title="Gallery Image 8">
+            <img src="{% static 'img/bg-img/20.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/21.jpg" class="gallery-img" title="Gallery Image 9">
+            <img src="{% static 'img/bg-img/21.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="static/img/bg-img/22.jpg" class="gallery-img" title="Gallery Image 10">
+            <img src="{% static 'img/bg-img/22.jpg' %}" alt="">
+        </a>
+    </div>
+</div>
+<!-- ##### Gallery Area End ##### -->
+
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Последние новости</h2>
+                    <p>Раздел, в котором отображаются последние записи из категории новостей.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Single Blog Post Area -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100">
+                    <div class="post-thumbnail">
+                        <a href="single-post.html"><img src="{% static 'img/bg-img/10.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post-content">
+                        <a href="single-post.html" class="post-title">
+                            <h4>Прошёл крестный ход</h4>
+                        </a>
+                        <div class="post-meta d-flex">
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Luke Coppen</a>
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> April 23, 2018</a>
+                        </div>
+                        <p class="post-excerpt">Крестный ход, к которому долго готовились, прошёл хорошо.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Blog Post Area -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100">
+                    <div class="post-thumbnail">
+                        <a href="single-post.html"><img src="{% static 'img/bg-img/11.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post-content">
+                        <a href="single-post.html" class="post-title">
+                            <h4>Постройка здания воскресной школы окончена</h4>
+                        </a>
+                        <div class="post-meta d-flex">
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Staff Reporter</a>
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> April 03, 2018</a>
+                        </div>
+                        <p class="post-excerpt">Теперь у нас есть воскрестная школа.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Blog Post Area -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100">
+                    <div class="post-thumbnail">
+                        <a href="single-post.html"><img src="{% static 'img/bg-img/12.jpg' %}" alt=""></a>
+                    </div>
+                    <div class="post-content">
+                        <a href="single-post.html" class="post-title">
+                            <h4>Важная новость</h4>
+                        </a>
+                        <div class="post-meta d-flex">
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Lucie Smith</a>
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> April 15, 2018</a>
+                        </div>
+                        <p class="post-excerpt">Важная новость о важном событии.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+{% endblock %}

@@ -1,0 +1,75 @@
+<!-- Sidebar Area -->
+<div class="col-12 col-lg-3">
+    <div class="post-sidebar-area">
+
+        <!-- ##### Single Widget Area ##### -->
+        <div class="single-widget-area">
+            <div class="search-form">
+                <form action="#" method="get">
+                    <input type="search" name="search" placeholder="Search Here">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ##### Single Widget Area ##### -->
+        <div class="single-widget-area">
+            <!-- Title -->
+            <div class="widget-title">
+                <h6>Категории</h6>
+            </div>
+            <ol class="crose-catagories">
+                {% for category in categories %}
+                    <li><a href="{% url 'blog:category' category.slug %}"><i class="fa fa-angle-right" aria-hidden="true"></i> {{ category.title }}</a></li>
+                {% endfor %}
+            </ol>
+        </div>
+
+        <!-- ##### Single Widget Area ##### -->
+        <div class="single-widget-area">
+            <!-- Title -->
+            <div class="widget-title">
+                <h6>Новости</h6>
+            </div>
+
+            {% for new in news %}
+            <!-- Single Latest Posts -->
+            <div class="single-latest-post">
+                <a href="#" class="post-title">
+                    <h6>{{ new.title }}</h6>
+                </a>
+                <p class="post-date">{{ new.publish }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- ##### Single Widget Area ##### -->
+<!--        <div class="single-widget-area">-->
+<!--            &lt;!&ndash; Title &ndash;&gt;-->
+<!--            <div class="widget-title">-->
+<!--                <h6>Archives</h6>-->
+<!--            </div>-->
+<!--            <ol class="crose-archives">-->
+<!--                <li><a href="#">July 2015</a></li>-->
+<!--                <li><a href="#">March 2015</a></li>-->
+<!--            </ol>-->
+<!--        </div>-->
+
+        <!-- ##### Single Widget Area ##### -->
+        <div class="single-widget-area">
+            <!-- Title -->
+            <div class="widget-title">
+                <h6>popular tags</h6>
+            </div>
+            <!-- Tags -->
+            <ol class="popular-tags d-flex flex-wrap">
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Cross</a></li>
+                <li><a href="#">Pray</a></li>
+                <li><a href="#">Holly Cross</a></li>
+                <li><a href="#">Event</a></li>
+            </ol>
+        </div>
+
+    </div>
+</div>

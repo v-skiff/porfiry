@@ -1,0 +1,94 @@
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- ##### Breadcrumb Area Start ##### -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcrumb Area End ##### -->
+
+<!-- ##### Blog Content Area Start ##### -->
+<section class="blog-content-area section-padding-100">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Blog Posts Area -->
+            <div class="col-12 col-lg-8">
+                <div class="blog-posts-area">
+
+                    <!-- Post Details Area -->
+                    <div class="single-post-details-area">
+                        <div class="post-thumbnail mb-30">
+                            <img src="{{ post.img.url }}" alt="">
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">{{ post.title }}</h2>
+                            {{ post.body | safe }}
+                            <p>
+                                Example:
+                                <br>
+                                ===================================
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi</p>
+                            <blockquote>
+                                <div class="blockquote-text">
+                                    <h6>“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.” </h6>
+                                    <h6>Ollie Schneider - <span>Parson</span></h6>
+                                </div>
+                            </blockquote>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        </div>
+                    </div>
+
+                    <!-- Post Tags & Share -->
+                    <div class="post-tags-share d-flex justify-content-between align-items-center">
+                        <!-- Tags -->
+                        <ol class="popular-tags d-flex flex-wrap">
+                            {% with post.tag.all as post_tags %}
+                                {% if post_tags.exists %}
+                                    <li>Метки:</li>
+                                    {% for tag in post_tags %}
+                                        <li>
+                                            <a href="#">
+                                                {{ tag }}
+                                                {% if not forloop.last %},{% endif %}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endwith %}
+                        </ol>
+                        <!-- Share -->
+                        <div class="post-share">
+                            <span>Share:</span>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    {% include 'blog/comments.html' %}
+                </div>
+            </div>
+
+            {% include 'blog/blog_sidebar.html' %}
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Content Area End ##### -->
+{% endblock %}
